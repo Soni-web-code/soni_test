@@ -1,0 +1,623 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>SoniDiabetesCare.com</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style> 
+    * {
+  box-sizing: border-box;
+
+}        .logo img{
+    float: left;
+    width: 150px;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 25px;          
+    border-radius: 90%;
+    border-width: 2px;
+    border-style: solid;
+}
+.main{ 
+    max-width: 200%px; 
+    margin-top: 20px;  
+    background-color: seashell;
+}
+        .head1 { 
+            font-size:70px; 
+            color: rgb(10, 140, 250);
+            font-weight:bold; 
+            margin-left: 20%;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+        } 
+        .head2 { 
+            font-size:25px; 
+            margin-left:10px; 
+            margin-bottom:10px; 
+            font-style: oblique;
+            font-weight: 1000;
+            margin-left: 30%;
+            position: relative;
+        } 
+        .head3 { 
+            font-size:25px; 
+            margin-bottom:10px; 
+            font-style: oblique;
+            font-weight: bold;
+            margin-left: 45%;}
+        h1{
+                text-align: center;
+                color: gray;
+                font-style: oblique;
+            }
+            .link{
+              float: right;}
+            .fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  margin-left: 20px;
+  float: right;
+}
+.fa:hover {
+    opacity: 0.8;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-whatsapp{
+    background: green;
+    color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+        body { 
+            margin: 0 auto; 
+            background-position:center; 
+            background-size: contain;  
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            }
+            .menu1 {    
+            position: relative; 
+            top: 0; 
+            background-color: turquoise; 
+            padding:10px 0px 10px 0px; 
+            color:black; 
+            margin: 0 auto; 
+            overflow: hidden; 
+            
+        } 
+        .menu1 a { 
+            float: left; 
+            font-weight: 800;
+            color: whitesmoke; 
+            text-align: center; 
+            padding: 14px 16px; 
+            text-decoration: none; 
+            font-size: 20px; 
+        } 
+        .menu-log1 { 
+            color: gray;
+            padding:10px 0px 10px 0px;  
+            margin-left: 4px;
+            overflow: hidden;  
+            right: auto; 
+            float: left;
+        } 
+        .menu {    
+            position: sticky; 
+            top: 0; 
+            background-color: burlywood; 
+            padding:10px 0px 10px 0px; 
+            color: ghostwhite; 
+            background-color: #f8f8f8;
+            margin: 0 auto; 
+            overflow: hidden;
+            z-index: 2; 
+        } 
+        .menu a { 
+            float: right; 
+            font-weight: 800;
+            color: gray; 
+            text-align: center; 
+            padding: 14px 16px; 
+            text-decoration: none; 
+            font-size: 20px; 
+        } 
+        .menu-log { 
+            right: auto; 
+            float: right; 
+        } 
+        /**********************************/
+/*          Styling Footer        */
+/*** Adding Styles to Company Details ***/
+.company-details{ 
+    overflow: hidden; 
+    padding: 2em 0em; 
+    background: grey; 
+    text-align: center; 
+    margin-top: 0; 
+}   
+#footer #col1, 
+#footer #col2, 
+#footer #col3{ 
+    float: left; 
+    width: 500px; 
+    padding: 0px 25px 0px 25px; 
+    font-size: xx-large;
+}      
+#footer #icon{ 
+    display: block; 
+    margin-bottom: 15px; 
+    font-size: 3rem; 
+    font-weight: 400;
+    font-style: oblique;
+}  
+/*** Adding Styles to Copyright Div ***/
+.copyright 
+{ 
+    overflow: hidden; 
+    padding: 3em 0em; 
+    border-top: 5px solid rgba(255, 255, 255, 0.08); 
+    text-align: center; 
+    background:gray;   
+}       
+.copyright p 
+{  
+    letter-spacing: 1px; 
+    font-size: 2em; 
+    color: rgba(255, 255, 255, 0.6); 
+    margin-top: 0.5px;
+}       
+.copyright a 
+{ 
+    text-decoration: none; 
+    color: rgba(255, 255, 255, 0.8); 
+}  
+/* Styling Social Icons */
+ul.contact{ 
+    margin: 0; 
+    padding: 2em 0em 0em 0em; 
+    list-style: none; 
+    margin-top: 0.5px;
+}       
+ul.contact li{ 
+    display: inline-block; 
+    padding: 0em 0.10em; 
+    font-size: 1em; 
+}  
+ul.contact li a{ 
+    margin-top: 1px;
+    color: white; 
+    display: inline-block; 
+    width: 40px; 
+    height: 40px; 
+    line-height: 22px; 
+    text-align: center; 
+}  
+.container {
+  position: relative;
+  width: 50%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@keyframes slidy {
+               0%{left: 0%;}
+               20%{left: 0%;}
+               25%{left: -100%;}
+               45%{left: -100%;}
+               50%{left: -200%;}
+               70%{left: -200%;}
+               75%{left: -300%;}
+               95%{left: -300%;}
+               100%{left: -400%;}
+           }
+           body{margin: 0;}
+           div#slider{overflow: hidden;}
+           div#slider figure img{width: 20%; float: left;}
+           div#slider figure{
+               position: relative;
+               width: 500%;
+               margin: 0;
+               left: 0;
+               text-align: left;
+               font-size: 0;
+               animation: 20s slidy infinite;
+            }
+    </style> 
+</head> 
+<body> 
+    <!-- Header Section -->
+    <header> 
+        <div class="main">
+            <div class="logo">
+                <img src="logo.png" alt="Avatar man">
+            </div>
+        <div class="head1">SoniDiabetesCare</div> 
+ 
+        <div class="head2">Keep your heart Sweet.....</div> 
+        <div class="head3">Not Blood.</div>
+        </div>
+        <div class="links">
+            <a href="https://www.facebook.com/SoniDiabetesCare/?ti=as" class="fa fa-facebook"></a>
+            <a href="https://wa.me/919461637475?text=Tarun%20is%20Awesome" class="fa fa-whatsapp"></a>
+            <a href="#" class="fa fa-instagram"></a>   
+            
+         </div> 
+    </header> 
+    <div class="menu1"> 
+        <a >Email: sonidiabetescare@gmail.com </a> 
+        <a >Contact Us: +91 7073662430 </a> 
+
+    </div>  
+    <!-- Menu Navigation Bar -->
+ 
+    <div class="menu"> 
+        <a href="C:\Users\chanchal soni\Desktop\Medical\tarun_blog.html" style="background-color: whitesmoke;">BLOG</a> 
+        <a href="C:\Users\chanchal soni\Desktop\Medical\Gallery.html" style="background-color: whitesmoke;">GALLERY</a> 
+        <a href="C:\Users\chanchal soni\Desktop\Medical\services.html" style="background-color: whitesmoke;">SERVICES</a>
+        <a href="#" style="background-color: whitesmoke;">CONTACT US</a>
+        <a href="#" style="background-color: whitesmoke;">ABOUT US</a>
+        <a href="C:\Users\chanchal soni\Desktop\Medical\prac.html"style="background-color: whitesmoke;" >HOME</a>
+        <div class="menu-log1" > 
+            <a style=" color: gray; background-color: whitesmoke; font-weight: 900; " href="C:\Users\chanchal soni\Desktop\Medical\form (2).html">MAKE APPOINMENT</a> 
+        </div>    </div>  
+            </body>
+            <div id="slider">
+                <figure>
+                    <img src="five.jpg" alt>
+                    <img src="one.jpg" alt>
+                    <img src="three.jpg" alt>
+                    <img src="four.jpg" alt>
+                    <img src="five.jpg" alt>
+                </figure> 
+            </div>
+           <h1>About Us</h1>  
+           <style>
+            /*[class*="col-"] {
+             float: left;
+             padding: 15px;
+            }
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 24%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}*/
+            .row1 {
+                position: relative;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                color: #888888;
+                line-height: 24px;
+                font-weight: 400;
+                
+                padding-right: 35px;
+                padding-left: 35px;
+                
+            
+            }
+            .row1 li {
+                padding-left: 30px;
+                font-family: 'Roboto Slab', serif;
+                line-height: 28px;
+                color: #404040;
+                padding-bottom: 12px;
+                padding: 40px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+                /*border: solid;*/
+            
+            
+            }
+            .row1 li::before {
+                position: relative;
+                margin-top: 12px !important;
+                left: 46px;
+                width: 7px;
+                height: 7px;
+                background: #e67e22;
+                content: "";
+                transform: rotate(45deg);
+            
+            }
+            .row1 p {
+                text-align: justify;
+                line-height: 24px;
+                color: #404040;
+                font-family: 'Roboto Slab', serif;
+                font-weight: normal;
+                padding-bottom: 0;
+            
+                
+            }
+            .row1 p {
+                margin: 0 0 10px;
+            
+            }
+            .row1 p {
+                display: block;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
+            
+            strong.textbld {
+                color: #3397b1;
+                font-size: 16px;
+            }
+            b, strong {
+                font-weight: 700;
+            }
+            
+            div {
+                display: block;
+                text-align: -webkit-match-parent;
+               
+            
+            }
+            .row1:after, .row1:before {
+                display: table;
+                content: " ";
+            }
+            .row1 ul {
+                margin-bottom: 16px;
+                
+            }
+            
+            .coloum1{
+               position: relative;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+            overflow: hidden;
+              
+            }
+            ul, li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .pic {
+              display: block;
+              
+              height: auto;
+              border-width: 10px;
+              border-color: #3397b1;
+            }
+            .image1 {
+                width :30%;
+                height: auto;
+                /*vertical-align: middle;
+                */
+                padding-right: 15px;
+                padding-left: 15px;
+                border: 0;
+                position: relative;
+                min-height: 1px;    
+            }
+            
+            </style>
+            </head>
+            <body>
+                           
+            <div class="row1">
+                
+              <ul>
+              <li>
+              <div class="coloum1 col-6" > <strong class="textbld" >About Me</strong> <br>
+                <img src="mama.jpg" alt="Avatar man" class="pic image1 " align =right>
+                
+            <p>Dr Mukesh Kumar Soni MD, earned his Post-Graduate Degree in Medicine in 2014 from the most prestigious Medical College of Rajasthan, SMS Medical College Jaipur.</p>                  
+            <p>After his Post Graduation he joined NIMS, Jaipur as a teaching faculty in the Department of Medicine. He has experience of working in SGPGI Lucknow for more than 2 years.</p>                      
+            <p>He moved to Sikar in 2017 and started working as a Consultant in the Department of Medicine in Gurukripa Hospital, Sikar. During his training and working he explored his interest in management of Diabetes and  pursued “Post Graduate Diploma In Clinical Endocrinology And Diabetes” in 2019,  Certified Course by Royal College of Physicians (UK).</p> 
+            <p> Presently He is working in the Soni Diabetes Care, Sikar as a chief consultant. His vision is to build a first class patient focused service based on high quality and evidence based practice throughout the organisation. </p>
+            <p>He believes that Diabetic people require regular specialised treatment under a dedicated Diabetic Center at affordable cost to live a healthy and quality life.
+            </p></div>
+              
+            
+              <!--div  class="image1 col-1"><img src="chanchu.PNG" class="pic">
+              </div-->
+              </li>
+              <li>
+              <div class="coloum11 col-6"> <strong class="textbld">About the Hospital</strong> <br>
+                <img src="hos.jpg" class="pic image1 " align =right>
+                                  <p>Diabetes Mellitus is becoming a major health burden affecting about more than 90 million Indians. Whatever the issue but the truth is that most of Indian Diabetic patients are not meeting their target Blood sugar level, HbA1c and LDL Cholesterol, which may result in many complications like heart attack, kidney and retina damage.</p>
+                                  <p>Soni Diabetes Care provides specialised service to Diabetic patients as per ADA guidelines to control the high blood sugar as well as to prevent these complications. </p>
+            <p>Faithful to our tradition, we provide the highest possible standards of care and treatment in a professional and compassionate manner to every person who avails of our services. Our patients love us be’coz we care about them.
+            </p>  </div>
+              
+            
+              <!--div  class="image1 col-1"><img src="chanchu.PNG" class="pic">
+              </div-->
+              </li>
+            </ul>
+            
+            </div>
+            <!--div>Sir, the task assigned to me is progressing according to the deadline, three out of 5 problems had been rectified but we are facing some technical difficulty which are been handled by our technical team successfully.
+            The consulting presentation is prepared for the upcoming meeting I will like you to me give your valuable input and rectifications. I am hereby attaching the progress report.
+            Thank you
+            ben
+            ABC Consulting Pvt.LTD<div-->
+            
+            
+            
+            <h1>Contact Us</h1>
+                <style>
+                    * {
+                      box-sizing: border-box;
+                    }
+                    .column {
+                      float: left;
+                      width: 50%;
+                      padding: 10px;
+                      height: 500px;}
+                    .row:after {
+                      content: "";
+                      display: table;
+                      clear: both;
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    <div class="row">
+                      <div class="column" style="background-color:#f8f8f8; text-align: center; background-color: seashell; font-size: 35px;">
+                        <h2 style="color: rgb(10, 140, 250); ">Contact Information</h2>
+                        <span > 
+                            Near Allen Coaching, Piprali Road Sikar- 332001, 
+                            <br />SoniDiabetesCare    
+                        </span> 
+                        <span> 
+                            <br />Telephone: +91 7073662430
+                        </span> 
+                        <span>
+                            <br />sonidiabetescare@gmail.com</span> 
+                      </div>
+                      <div class="column" style="background-color:#f8f8f8; text-align: center; background-color: seashell; font-size: 35px;">
+                        <h2 style="color: rgb(10, 140, 250); ">Location</h2>
+                        <p>
+                            <div id="googleMap" style= "width:95%;height:300px; margin-left: 10px; "></div>
+                    <script>
+                    function myMap() {
+                    var mapProp= {
+                      center:new google.maps.LatLng(51.508742,-0.120850),
+                      zoom:0,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                    }
+                    function scrollWin() {
+                        window.scrollTo(0,600);
+                      }
+                    </script>
+                    
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANAeP7wdiPl7WBZkpiiXyASbE0Sb2SJ1A&callback=myMap"></script>
+                        </p>
+                      </div>
+                    </div>
+                    </body>
+<style>
+    * {
+  box-sizing: border-box;
+}
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+    }
+    
+    #myBtn {
+      display: none;
+      position: relative;
+      bottom: 15px;
+      right: 30px;
+      z-index: 99;
+      font-size: 15px;
+      border: black;
+      outline: none;
+      background-color: teal;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 25px;
+    }
+    
+    #myBtn:hover {
+      background-color: #555;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Up</button>
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
+    </body>
+        <!-- Footer Menu -->
+<footer id = "footer"> 
+          
+    <!-- Company Details -->
+    <!-- 1. Address  
+         2. Contact Number 
+         3. Enquiry Mail  
+    -->
+    <div class="company-details"> 
+        <div class="row"> 
+            <div id ="col1" style="width: 33.3%; float: left;"> 
+                <span id = "icon" class="fa fa-map-marker"></span> 
+                      
+                <span> 
+                    Near Allen Coaching, Piprali Road Sikar- 332001, 
+                    <br />SoniDiabetesCare
+                </span> 
+            </div> 
+                  
+            <div id ="col2"  style="width: 33.3%; float: left;"> 
+                <span id="icon" class="fa fa-phone"></span> 
+  
+                <span> 
+                    Telephone: +91 7073662430
+                </span> 
+            </div> 
+                      
+            <div id ="col3"style="width: 33.3%; float: left;"> 
+                <span id="icon" class="fa fa-envelope"></span> 
+                <span>sonidiabetescare@gmail.com</span> 
+            </div> 
+        </div> 
+    </div>
+    <!-- Copyright Section -->
+    <div class="copyright"> 
+        <p>©  All rights reserved | SoniDiabetesCare.</p>  
+        <ul class="contact"> 
+            <li> 
+                <a href="#" class="fa fa-instagram"></a> 
+            </li> 
+            <li> 
+                <a href="https://www.facebook.com/SoniDiabetesCare/?ti=as" class="fa fa-facebook"> </a> 
+            </li> 
+            <li> 
+                <a href="https://wa.me/919461637475?text=..%20..%20.." class="fa fa-whatsapp"> 
+                </a> 
+            </li> 
+        </ul> 
+    </div> 
+</footer> 
+</body> 
+</html>
